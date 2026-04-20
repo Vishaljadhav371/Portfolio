@@ -67,15 +67,16 @@ nav ul li a:hover{
     gap:25px;
 }
 
-/* BOX (CLEAN STYLE) */
+/* BOX */
 .box{
     background:#0f2747;
     padding:25px;
     border-radius:12px;
-    width:250px;
+    width:260px;              /* 🔥 slightly bigger */
     text-align:center;
     transition:all 0.3s ease;
     border:1px solid transparent;
+    word-wrap:break-word;     /* 🔥 prevents text overflow */
 }
 
 /* ICON */
@@ -95,6 +96,11 @@ nav ul li a:hover{
     transform:translateY(-6px);
     border:1px solid #FFD34D;
     box-shadow:0 0 15px rgba(255,211,77,0.2);
+}
+
+/* 🔥 FULL WIDTH BOX (FOR FUTURE GOAL) */
+.full-box{
+    width:100%;
 }
 
 /* HERO */
@@ -187,6 +193,18 @@ nav ul li a:hover{
     border:1px solid #FFD34D;
     box-shadow:0 0 15px rgba(255,211,77,0.2);
     transform:translateY(-5px);
+}
+
+/* 🔥 CONTACT LINKS FIX */
+.box a{
+    color:#ffffff;
+    text-decoration:none;
+    display:block;
+    margin-top:5px;
+}
+
+.box a:hover{
+    color:#FFD34D;
 }
 
 /* RESPONSIVE */

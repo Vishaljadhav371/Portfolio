@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#07182f;
+    color:#fff;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+}
+
+nav h1{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-size:15px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#FFD34D;
+}
+
+/* SECTION */
+.section{
+    padding:80px;
+}
+
+/* HEADINGS */
+.section h1{
+    font-size:40px;
+    color:#FFD34D;
+    margin-bottom:30px;
+}
+
+.section h2{
+    margin:40px 0 20px;
+    font-size:24px;
+}
+
+/* BOX CONTAINER */
+.box-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+/* BOX (CLEAN STYLE) */
+.box{
+    background:#0f2747;
+    padding:25px;
+    border-radius:12px;
+    width:250px;
+    text-align:center;
+    transition:all 0.3s ease;
+    border:1px solid transparent;
+}
+
+/* ICON */
+.box h2{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+/* TEXT */
+.box p{
+    font-size:14px;
+    color:#cbd5e1;
+}
+
+/* 🔥 SIMPLE YELLOW EFFECT */
+.box:hover{
+    transform:translateY(-6px);
+    border:1px solid #FFD34D;
+    box-shadow:0 0 15px rgba(255,211,77,0.2);
+}
+
+/* HERO */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px;
+}
+
+.hero-text h2{
+    color:#FFD34D;
+    font-size:28px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    margin:10px 0;
+}
+
+.hero-text h3{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    max-width:500px;
+    color:#cbd5e1;
+}
+
+/* BUTTON */
+.btn{
+    background:#FFD34D;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+    display:inline-block;
+    margin-top:20px;
+}
+
+/* IMAGE */
+.hero-img img{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #FFD34D;
+    box-shadow:0 0 20px rgba(255,211,77,0.3);
+}
+
+/* CERTIFICATE */
+.certificate-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    justify-content:center;
+}
+
+.certificate-card{
+    width:240px;
+    padding:15px;
+    border-radius:12px;
+    background:#0f2747;
+    text-align:center;
+    transition:0.3s;
+    border:1px solid transparent;
+}
+
+.certificate-card img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+.certificate-card h3{
+    font-size:15px;
+    margin-bottom:5px;
+}
+
+.certificate-card p{
+    font-size:13px;
+    color:#cbd5e1;
+}
+
+.certificate-card:hover{
+    border:1px solid #FFD34D;
+    box-shadow:0 0 15px rgba(255,211,77,0.2);
+    transform:translateY(-5px);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:10px;
+    }
+
+    .section{
+        padding:40px 20px;
+    }
+
+    .box{
+        width:100%;
+    }
+}
